@@ -6,7 +6,7 @@ jobs:
       - image: circleci/node:4.8.2
     steps:
       - checkout
-      - run: git submodule update
+      - run: git submodule update --init
       - run: make
       - run: ./test
       - run: ls -l test-dev*
