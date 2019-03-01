@@ -10,4 +10,11 @@ jobs:
       - run: make
       - run: ./test
       - run: ls -l test-dev*
-      
+
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+
