@@ -8,3 +8,5 @@ jobs:
       - checkout
       - run: make
       - run: ./test
+      - run: tree
+      
