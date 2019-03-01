@@ -10,6 +10,8 @@ jobs:
       - run: make
       - run: ./test
       - run: ls -l test-dev*
+      - run: make -C test-devel1
+      - run: test-devel1/test
 
 
 workflows:
