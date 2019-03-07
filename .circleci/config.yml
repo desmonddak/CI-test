@@ -7,6 +7,7 @@ jobs:
     steps:
       - run: git clone https://github.com/ingydotnet/git-subrepo /usr/local/git-subrepo
       - run: echo 'source /usr/local/git-subrepo/.rc' >> ~/.bashrc
+      - run: echo '' >> ~/.bashrc
       - checkout
       - run: git --version
       - run: cat /usr/local/git-subrepo/.rc
