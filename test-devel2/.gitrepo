@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/desmonddak/test-devel2
+	branch = master
+	commit = 2d58c37aab201a3420fb932bb129638086b4fd37
+	parent = d0e4dddee1d877dd6e0b52ef003cdf05144f5d05
+	method = merge
+	cmdver = 0.4.0
