@@ -16,6 +16,8 @@ jobs:
       - run: source ~/.bashrc && printenv
       - run: cat ~/.bashrc && source ~/.bashrc && echo $GIT_SUBREPO_ROOT && echo $CIRCLE_JOB
       - run: source /usr/local/git-subrepo/.rc && echo $GIT_SUBREPO_ROOT
+      - run: git config --global user.email "root@root.com"
+      - run: git config --global user.name "root"
       - run: source /usr/local/git-subrepo/.rc && git subrepo pull --all
       - run: make
       - run: ./test
