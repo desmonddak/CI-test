@@ -9,6 +9,8 @@ jobs:
       - run: echo 'source /usr/local/git-subrepo/.rc' >> ~/.bashrc
       - checkout
       - run: git --version
+      - run: sudo apt-get update
+      - run: sudo apt-get install git
       - run: cat /usr/local/git-subrepo/.rc
       - run: source ~/.bashrc && git subrepo pull --all
       - run: make
