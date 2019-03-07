@@ -1,6 +1,10 @@
 FROM alpine:latest
 
-COPY basic/ /basic/
-
 RUN \
-    bash -c "echo 'Hello World'"
+    apt-get update && apt-get install -y
+    	    bash \
+	    git \
+	    ssh \
+	    tar \
+	    gzip \
+	    ca-certificates
