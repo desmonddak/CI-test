@@ -5,8 +5,11 @@ jobs:
     docker:
       - image: circleci/node:4.8.2
     steps:
+      - run: apt-get update
+      - run: git clone https://github.com/ingydotnet/git-subrepo /usr/local/git-subrepo
+      - run: echo 'source /usr/local/git-subrepo/.rc' >> ~/.bashrc
       - checkout
-      - run: git submodule update --init
+      - run: git subrepo pull --all
       - run: make
       - run: ./test
       - run: ls -l test-dev*
