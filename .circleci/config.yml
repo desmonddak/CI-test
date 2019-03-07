@@ -10,6 +10,7 @@ jobs:
       - run: echo '' >> ~/.bashrc
       - checkout
       - run: git --version
+      - run: git config --get user.name
       - run: cat /usr/local/git-subrepo/.rc
       - run: cat ~/.bashrc
       - run: source ~/.bashrc && printenv
