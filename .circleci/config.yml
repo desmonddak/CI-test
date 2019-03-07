@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: desmonddak/new-git:latest
     steps:
-      - run: sudo git clone https://github.com/ingydotnet/git-subrepo /usr/local/git-subrepo
+      - run: git clone https://github.com/ingydotnet/git-subrepo /usr/local/git-subrepo
       - run: echo 'source /usr/local/git-subrepo/.rc' >> ~/.bashrc
       - checkout
       - run: git --version
