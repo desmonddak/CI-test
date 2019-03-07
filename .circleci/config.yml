@@ -10,6 +10,7 @@ jobs:
       - checkout
       - run: git --version
       - run: cat /usr/local/git-subrepo/.rc
+      - run: source ~/.bashrc && printenv
       - run: source ~/.bashrc && echo $GIT_SUBREPO_ROOT
       - run: source ~/.bashrc && git subrepo pull --all
       - run: source ~/.bashrc && git subrepo pull --all
