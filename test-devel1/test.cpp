@@ -4,7 +4,7 @@ using namespace std;
 
 int
 main (int argc, char* argv[]) {
-  cout << "Hello Devel1 direct mod4" << endl;
+  cout << "Hello Devel1 direct mod" << endl;
   return 0;
 }
 

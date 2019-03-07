@@ -6,7 +6,7 @@
 [subrepo]
 	remote = https://github.com/desmonddak/test-devel1
 	branch = master
-	commit = fee26e5b691bc8ec8be7963232bfe8b495856356
-	parent = 16ce11438d9bf90bd671e63049137571a7430d18
+	commit = d894b6c358acc8fe8b973ed157e475450f41024f
+	parent = fcde55b2940308e37d04b1391168f72b0a0d90cc
 	method = merge
 	cmdver = 0.4.0
