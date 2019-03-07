@@ -8,8 +8,8 @@ jobs:
       - run: sudo git clone https://github.com/ingydotnet/git-subrepo /usr/local/git-subrepo
       - run: echo 'source /usr/local/git-subrepo/.rc' >> ~/.bashrc
       - checkout
-      - run: source ~/.bashrc
-      - run: git subrepo pull --all
+      - run: cat ~/.bashrc
+      - run: source ~/.bashrc && git subrepo pull --all
       - run: make
       - run: ./test
       - run: ls -l test-dev*
