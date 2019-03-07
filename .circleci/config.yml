@@ -15,7 +15,7 @@ jobs:
       - run: cat ~/.bashrc && source ~/.bashrc && echo $GIT_SUBREPO_ROOT && echo $CIRCLE_JOB
       - run: source /usr/local/git-subrepo/.rc && echo $GIT_SUBREPO_ROOT
       - checkout
-      - run: source /usr/local/git-subrepo/.rc && git subrepo pull --all
+#      - run: source /usr/local/git-subrepo/.rc && git subrepo pull --all
       - run: make
       - run: ./test
       - run: ls -l test-dev*
