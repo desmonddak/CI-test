@@ -12,7 +12,7 @@ jobs:
       - run: cat /usr/local/git-subrepo/.rc
       - run: cat ~/.bashrc
       - run: source ~/.bashrc && printenv
-      - run: source ~/.bashrc && echo $GIT_SUBREPO_ROOT && echo $CIRCLE_JOB
+      - run: cat ~/.bashrc && source ~/.bashrc && echo $GIT_SUBREPO_ROOT && echo $CIRCLE_JOB
       - run: source ~/.bashrc && git subrepo pull --all
       - run: make
       - run: ./test
