@@ -12,6 +12,7 @@ jobs:
       - run: sudo apt-get update
       - run: sudo apt-get install apt-utils
       - run: sudo apt-get install -y git
+      - run: git --version
       - run: cat /usr/local/git-subrepo/.rc
       - run: source ~/.bashrc && git subrepo pull --all
       - run: make
