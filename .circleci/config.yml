@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/node:4.8.2
+      - image: circleci/node:10.0.0
     steps:
       - run: sudo git clone https://github.com/ingydotnet/git-subrepo /usr/local/git-subrepo
       - run: echo 'source /usr/local/git-subrepo/.rc' >> ~/.bashrc
