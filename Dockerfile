@@ -1,10 +1,13 @@
 FROM alpine:latest
 
 RUN \
-    apt-get update && apt-get install -y
+    apk update && apk add \
     	    bash \
+	    curl \
 	    git \
-	    ssh \
+	    openssh \
 	    tar \
 	    gzip \
+	    make \
+	    g++ \
 	    ca-certificates
